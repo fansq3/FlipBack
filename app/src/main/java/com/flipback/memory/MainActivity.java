@@ -202,7 +202,7 @@ public class MainActivity extends Activity implements MemoryGameView.GameListene
     }
 
     @Override
-    protected void onWindowFocusChanged(boolean hasFocus) {
+    public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         if (hasFocus) hideSystemBars();
     }
